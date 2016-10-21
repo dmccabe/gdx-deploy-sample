@@ -32,11 +32,11 @@ butler {
 }
 ```
 
-Then grab the build.gradle file in the desktop folder from here and put it in desktop/build.gradle. After that, you'll need to updae the paths for `dekstopWorkingDir` and `utilsDir`, then put proguard.jar, packr.jar and ResourceHacker.exe into the utils folder specified. You'll also want to replace the various references in this file to Questionable Markup, which was the name of my game.
+After that, grab the build.gradle file from the desktop folder in this repository and put it in desktop/build.gradle. Once that's in place, you'll need to update the paths for `dekstopWorkingDir` and `utilsDir`, then put proguard.jar, packr.jar and ResourceHacker.exe into the utils folder specified. You'll also want to replace the various references in this file to Questionable Markup, which was the name of my game.
 
-Add a Proguard configuration file to your LibGDX project under desktop/proguard-project.txt. A sample is included in this repo, although you'll need to update the packages to correspond to class names for your game.
+Next, add a Proguard configuration file to your LibGDX project under desktop/proguard-project.txt. A sample is included in this repo, although you'll need to update the packages to correspond to class names for your game.
 
-Add a configuration file for Packr in your LibGDX project under desktop/config/packr-minimize.json. There's also a sample of this in the repo files.
+Then, add a configuration file for Packr in your LibGDX project under desktop/config/packr-minimize.json. There's also a sample of this in the repo files.
 
 Finally, add the icons you want to use for your Windows / Mac builds to destkop/assets/icons/app-icon.ico and desktop/assets/icons/app-icon.icns, respectively.
 
@@ -58,7 +58,7 @@ Packr is used to generate an executeable for the jar file. To generate all build
 gradlew desktop:pack
 ```
 
-This will take the obfuscated build generated from the previous step as an input. Invoking `pack` will automatically run the `obfuscate` so you don't need to execute that separately. You can also run the process individually for each build:
+This will take the obfuscated build generated from the previous step as an input. Invoking `pack` will automatically run the `obfuscate` command, so you don't need to execute that separately. You can also run the process individually for each build:
 
 ```
 gradlew desktop:packWindows32
@@ -89,7 +89,7 @@ Running the build-specific commands will NOT execute `pack` first.
 
 # Upload to itch.io (Butler)
 
-Butler is a command-line tool that can be used to upload builds to itch.io. The upload all builds, execute:
+Butler is a command-line tool that can be used to upload builds to itch.io. To upload all builds, execute:
 
 ```
 gradlew desktop:push
@@ -118,9 +118,9 @@ gradlew desktop:release
 This command will essentially do the same thing as `setIcon`, it just puts a prettier name on it.
 
 # Caveats
-* These commands were put together with an extremely limited knowledge of Gradle. I know thre's better ways to push together these commands and integrate them into a LibGDX project. This project mainly exists to deomnstrate the set of commands I was using the generate and deploy builds, but any suggestoins on how to improve things are greatly appreciated!
+* These commands were put together with an extremely limited knowledge of Gradle. I know there's better ways to put together these commands and integrate them into a LibGDX project. This project mainly exists to deomnstrate the set of commands I was using the generate and deploy builds, but any suggestions on how to improve things are greatly appreciated!
 
-* There currently isn't anything setup to check whether or not anything has changed since the last build, so unlike some other LibGDX Gradle commands, all of the commands included here will execute each time their run, even if the inputs haven't changed. I did some research into how to fix this, but I wasn't able to figure it out. Any insight would be awesome.
+* There currently isn't anything setup to check whether or not anything has changed since the last build, so unlike some other LibGDX Gradle commands, all of the commands included here will execute each time they're run, even if the inputs haven't changed. I did some quick research into how to fix this, but I haven't spent enough time with it yet. Any insight would be awesome.
 
 * I couldn't figure out how to properly re-use some pieces from the Butler plugin, so I threw my hands up and did some copy-pasta to get it working the way I wanted it to. Hopefully someone can come up wit a better way to do that.
 
