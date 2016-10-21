@@ -105,7 +105,7 @@ gradlew desktop:pushLinux32
 gradlew desktop:pushLinux64
 ```
 
-As with the other build-specific commands, these commands will NOT execuate any previous steps.
+As with the other build-specific commands, these commands will NOT execute any previous steps.
 
 # Other Output Options
 
@@ -118,12 +118,12 @@ gradlew desktop:release
 This command will essentially do the same thing as `setIcon`, it just puts a prettier name on it.
 
 # Caveats
-These commands were put together with an extremely limited knowledge of Gradle. I know thre's better ways to push together these commands and integrate them into a LibGDX project. This project mainly exists to deomnstrate the set of commands I was using the generate and deploy builds, but any suggestoins on how to improve things are greatly appreciated!
+* These commands were put together with an extremely limited knowledge of Gradle. I know thre's better ways to push together these commands and integrate them into a LibGDX project. This project mainly exists to deomnstrate the set of commands I was using the generate and deploy builds, but any suggestoins on how to improve things are greatly appreciated!
 
-Their currently isn't anything setup to check whether or not anything has changed since the last build, so unlike some other LibGDX Gradle commands, all of the commands included here will execute each time their run, even if the inputs haven't changed. I did some research into how to fix this, but I wasn't able to figure it out. Any insight would be awesome.
+* There currently isn't anything setup to check whether or not anything has changed since the last build, so unlike some other LibGDX Gradle commands, all of the commands included here will execute each time their run, even if the inputs haven't changed. I did some research into how to fix this, but I wasn't able to figure it out. Any insight would be awesome.
 
-I couldn't figure out how to properly re-use some pieces from the Butler plugin, so I threw my hands up and did some copy-pasta to get it working the way I wanted it to. Hopefully someone can come up wit a better way to do that.
+* I couldn't figure out how to properly re-use some pieces from the Butler plugin, so I threw my hands up and did some copy-pasta to get it working the way I wanted it to. Hopefully someone can come up wit a better way to do that.
 
-Resource Hacker can only be run from a Windows machine or VM, since it uses Windows APIs to set the icon on the executable. There may be other solutions out there to do this from Mac and Linux, however.
+* Resource Hacker can only be run from a Windows machine or VM, since it uses Windows APIs to set the icon on the executable. There may be other solutions out there to do this from Mac and Linux, however.
 
-This was only built with desktop builds in mind, since that's what I was focused on for my project. Additional work would be needed to apply this to Android, iOS, or HTML builds.
+* This was only built with desktop builds in mind, since that's what I was focused on for my project. Additional work would be needed to apply this to Android, iOS, or HTML builds.
