@@ -1,0 +1,70 @@
+{
+  "reduce": [
+    {
+      "archive": "jre/lib/rt.jar",
+      "paths": [
+        "com/sun/corba",
+        "com/sun/imageio",
+        "com/sun/jmx",
+        "com/sun/jndi",
+        "com/sun/media",
+        "com/sun/naming",
+        "com/sun/rowset",
+        "com/sun/script",
+        "javax/imageio",
+        "javax/management",
+        "javax/print",
+        "javax/naming",
+        "javax/sound",
+        "javax/sql",
+        "javax/swing/plaf/nimbus",
+        "javax/swing/text/htmls",
+        "sun/applet",
+        "sun/corba",
+        "sun/management",
+        "sun/rmi"
+      ]
+    },
+    {
+      "archive": "jre/lib/charsets.jar",
+      "paths": [
+      ]
+    },
+    {
+      "archive": "jre/lib/jsse.jar",
+      "paths": [
+      ]
+    },
+    {
+      "archive": "jre/lib/resources.jar",
+      "paths": [
+        "com/sun/corba",
+        "com/sun/imageio",
+        "com/sun/jndi",
+        "com/sun/rowset",
+        "com/sun/servicetag"
+      ]
+    }
+  ],
+  "remove": [
+    {
+      "platform": "*",
+      "paths": [
+        "jre/lib/applet",
+        "jre/lib/charsets.jar",
+        "jre/lib/ext/localedata.jar",
+        "jre/lib/rhino.jar",
+        "jre/lib/management",
+        "jre/lib/management-agent.jar",
+        "jre/lib/zi"
+      ]
+    },
+    {
+      "platform": "windows",
+      "paths": [
+        "jre/bin/*.exe",
+        "jre/bin/client"
+      ]
+    }
+  ]
+}
