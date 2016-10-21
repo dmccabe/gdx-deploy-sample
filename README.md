@@ -14,6 +14,8 @@ Download Resource Hacker: http://www.angusj.com/resourcehacker/
 
 Install Butler: The [gradle-butler-plugin](https://github.com/mini2Dx/gradle-butler-plugin) should handle this automatically, or you can install it manually following the instructions at https://itch.io/docs/butler/installing.html.
 
+Download JDKs: The JDKs used by Packr to generate the executables need to be downloaded separately. You can find Open JDK downloads at https://github.com/alexkasko/openjdk-unofficial-builds.
+
 In your main build.gradle file, add this under buildscript -> dependencies:
 
 ```groovy
@@ -32,7 +34,7 @@ butler {
 }
 ```
 
-After that, grab the build.gradle file from the desktop folder in this repository and put it in desktop/build.gradle. Once that's in place, you'll need to update the paths for `dekstopWorkingDir` and `utilsDir`, then put proguard.jar, packr.jar and ResourceHacker.exe into the utils folder specified. You'll also want to replace the various references in this file to Questionable Markup, which was the name of my game.
+After that, grab the build.gradle file from the desktop folder in this repository and put it in desktop/build.gradle. Once that's in place, you'll need to update the paths for `dekstopWorkingDir` and `utilsDir`, then put proguard.jar, packr.jar and ResourceHacker.exe into the utils folder specified. The JDKs you downloaded will need to go into a folder called "jre" folder in the the utils folder, and you may need to update the pack commands to use the correct JDK versions. You'll also want to replace the various references in this file to Questionable Markup, which was the name of my game.
 
 Next, add a Proguard configuration file to your LibGDX project under desktop/proguard-project.txt. A sample is included in this repo, although you'll need to update the packages to correspond to class names for your game.
 
