@@ -6,15 +6,17 @@ This project includes commands to obfuscate the source using Proguard, generate 
 
 # Setup
 
-Download Proguard: http://proguard.sourceforge.net/
+You'll need to download / install some files before getting started, if you don't have them already:
 
-Download Packr: https://github.com/libgdx/packr
+* Download Proguard: http://proguard.sourceforge.net/
 
-Download Resource Hacker: http://www.angusj.com/resourcehacker/
+* Download Packr: https://github.com/libgdx/packr
 
-Install Butler: The [gradle-butler-plugin](https://github.com/mini2Dx/gradle-butler-plugin) should handle this automatically, or you can install it manually following the instructions at https://itch.io/docs/butler/installing.html.
+* Download Resource Hacker: http://www.angusj.com/resourcehacker/
 
-Download JDKs: The JDKs used by Packr to generate the executables need to be downloaded separately. You can find Open JDK downloads at https://github.com/alexkasko/openjdk-unofficial-builds.
+* Download JDKs: The JDKs used by Packr to generate the executables need to be downloaded separately. You can find Open JDK downloads at https://github.com/alexkasko/openjdk-unofficial-builds.
+
+* Install Butler: The [gradle-butler-plugin](https://github.com/mini2Dx/gradle-butler-plugin) used by the commands should handle this automatically, or you can install it manually following the instructions at https://itch.io/docs/butler/installing.html.
 
 In your main build.gradle file, add this under buildscript -> dependencies:
 
