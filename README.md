@@ -12,7 +12,7 @@ Download Packr: https://github.com/libgdx/packr
 
 Download Resource Hacker: http://www.angusj.com/resourcehacker/
 
-Install Butler: https://itch.io/docs/butler/installing.html
+Install Butler: The [gradle-butler-plugin](https://github.com/mini2Dx/gradle-butler-plugin) should handle this automatically, or you can install it manually following the instructions at https://itch.io/docs/butler/installing.html.
 
 In your main build.gradle file, add this under buildscript -> dependencies:
 
