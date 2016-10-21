@@ -21,7 +21,7 @@ classpath 'de.undercouch:gradle-download-task:3.1.1'
 classpath 'org.mini2Dx:butler:1.0.1'
 ```
 
-The under `project(:desktop)`, add:
+Then under `project(:desktop)`, add:
 
 ```groovy
 apply plugin: "org.mini2Dx.butler"
