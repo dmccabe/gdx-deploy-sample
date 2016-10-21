@@ -32,7 +32,7 @@ butler {
 }
 ```
 
-Then grab the desktop.gradle file from here and updae the paths for `dekstopWorkingDir` and `utilsDir`, then put packr.jar and ResourceHacker.exe into the utils folder specified. You'll also want to replace the various references in this file to Questionable Markup, which was the name of my game.
+Then grab the build.gradle file in the desktop folder from here and put it in desktop/build.gradle. After that, you'll need to updae the paths for `dekstopWorkingDir` and `utilsDir`, then put proguard.jar, packr.jar and ResourceHacker.exe into the utils folder specified. You'll also want to replace the various references in this file to Questionable Markup, which was the name of my game.
 
 Add a Proguard configuration file to your LibGDX project under desktop/proguard-project.txt. A sample is included in this repo, although you'll need to update the packages to correspond to class names for your game.
 
