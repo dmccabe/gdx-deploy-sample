@@ -122,7 +122,7 @@ gradlew desktop:release
 This command will essentially do the same thing as `setIcon`, it just puts a prettier name on it.
 
 # Caveats
-* These commands were put together with an extremely limited knowledge of Gradle. I know there's better ways to put together these commands and integrate them into a LibGDX project. This project mainly exists to deomnstrate the set of commands I was using the generate and deploy builds, but any suggestions on how to improve things are greatly appreciated!
+* These commands were put together with an extremely limited knowledge of Gradle. I know there's better ways to put together these commands and integrate them into a LibGDX project. This project mainly exists to demonstrate the set of commands I was using the generate and deploy builds, but any suggestions on how to improve things are greatly appreciated!
 
 * There currently isn't anything setup to check whether or not anything has changed since the last build, so unlike some other LibGDX Gradle commands, all of the commands included here will execute each time they're run, even if the inputs haven't changed. I did some quick research into how to fix this, but I haven't spent enough time with it yet. Any insight would be awesome.
 
