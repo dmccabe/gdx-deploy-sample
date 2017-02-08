@@ -126,7 +126,7 @@ This command will essentially do the same thing as `setIcon`, it just puts a pre
 
 * There currently isn't anything setup to check whether or not anything has changed since the last build, so unlike some other LibGDX Gradle commands, all of the commands included here will execute each time they're run, even if the inputs haven't changed. I did some quick research into how to fix this, but I haven't spent enough time with it yet. Any insight would be awesome.
 
-* I couldn't figure out how to properly re-use some pieces from the Butler plugin, so I threw my hands up and did some copy-pasta to get it working the way I wanted it to. Hopefully someone can come up wit a better way to do that.
+* I couldn't figure out how to properly re-use some pieces from the Butler plugin, so I threw my hands up and did some copy-pasta to get it working the way I wanted it to. Hopefully someone can come up with a better way to do that.
 
 * Resource Hacker can only be run from a Windows machine or VM, since it uses Windows APIs to set the icon on the executable. There may be other solutions out there to do this from Mac and Linux, however.
 
